@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Academy</title>
+ 
+</head>
+<style>
+  body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: rgb(216, 216, 2);
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+  
+  .login-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    text-decoration: none;
+    color: #b81111;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+  }
+  
+  .signup-text a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+</style>
+<body>
+  
+  <div class="login-container">
+    
+    <form action="#" class="login-form">
+      <h2>REGISTERED USER LOGIN</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      <div class="checkbox-container">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember Me</label>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+      <p class="signup-text">Don't have an account? <a href="#">Sign Up Here</a></p>
+    </form>
+  </div>
+</body>
+<script>
+  const loginForm = document.querySelector('.login-form');
+
+loginForm.addEventListener('submit', (event) => {
+event.preventDefault(); 
+window.location.href = 'userdashboard.html';
+});
+</script>
+</html>

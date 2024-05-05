@@ -1,0 +1,166 @@
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.footnote {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.degree-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4285f4;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.explore-more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #4285f4;
+    margin-top: 20px;
+}
+
+.enroll-container {
+  max-width: 600px;
+  margin-top: 160px;
+  margin-left: 400px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.enroll-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.certificate-details {
+  margin-bottom: 20px;
+}
+
+.certificate-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.certificate-details li i {
+  color: #4285f4;
+  margin-right: 10px;
+}
+
+.duration-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.option {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #4285f4;
+  color: #fff;
+  border-color: #4285f4;
+}
+
+.free-upgrade {
+  display: block;
+  color: #4285f4;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.continue-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

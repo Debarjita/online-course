@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.add-video-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.section-title {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.uploaded {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #4a90e2;
+    cursor: pointer;
+    font-size: 16px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.important-info {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pending Videos for Upload</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu-icon">☰</div>
+                <div class="logo">My Account</div>
+            </nav>
+        </header>
+        <main>
+            <div class="add-video-btn">+ Add New Video</div>
+            <div class="section-title">VIDEOS UPLOADED IN THIS COURSE</div>
+            <table>
+              <thead>
+                <tr>
+                  <th>SL.NO</th>
+                  <th>COURSE</th>
+                  <th>TITLE</th>
+                  <th>STATUS</th>
+                  <th>DATE</th>
+                  <th>DELETE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Java Programming Course for Beginners - By Debarjita Bhattacharjee</td>
+                  <td>Practice Questions on Arrays( 1D and 2D arrays)</td>
+                  <td><span class="status uploaded">Uploaded</span></td>
+                  <td>2024-01-23 21:34:59</td>
+                  <td><button class="modify-btn">&#9998;</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Java Programming Course for Beginners - By Debarjita Bhattacharjee</td>
+                  <td>ARRAYS IN JAVA (MULTIDIMENTIONAL 2-D ARRAY)</td>
+                  <td><span class="status uploaded">Uploaded</span></td>
+                  <td>2024-01-23 21:29:18</td>
+                  <td><button class="modify-btn">&#9998;</button></td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          
+        <div class="modal" id="addVideoModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>New Video to Upload</h2>
+                <div class="important-info">
+                    <h3>Important</h3>
+                    <ol>
+                        <li>If you have multiple courses, please select the correct course from the drop-down menu as the video will be added to the same course.</li>
+                        <li>Please ensure to make video link sharing enabled before adding the video entry. If link sharing is not on, our editing team can't download videos and can't process it.</li>
+                        <li>Enter the correct video title/topic name as the same will be used while video upload.</li>
+                    </ol>
+                </div>
+                <form>
+                    <label for="course">Course</label>
+                    <select id="course">
+                        <option value="java-beginners">Java Programming Course for Beginners - By Debarjita Bhattacharjee</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Video Title/Topic Name">
+                    <label for="details">Details</label>
+                    <textarea id="details" placeholder="Enter video details or any other note in this section."></textarea>
+                    <label for="link">Link</label>
+                    <input type="text" id="link" placeholder="Google Drive/OneDrive Link">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+        
+</body>
+<script>
+    // Get the modal
+var modal = document.getElementById("addVideoModal");
+
+// Get the button that opens the modal
+var btn = document.querySelector(".add-video-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</html>

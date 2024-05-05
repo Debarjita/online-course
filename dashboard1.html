@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educator Online</title>
+    <link rel="stylesheet" href="#">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+}
+
+aside {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 200px;
+    margin-left: 20px;
+
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #ddef69;
+    border: 1px solid #0a0906;
+}
+
+.announcement {
+    background-color: #69e2ef;
+    border: 1px solid #0a0906;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #dc7bf0;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+}
+
+.value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+header{
+        background-color: yellow;
+        margin-top: 2%;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 40px;
+
+    }
+   
+    .header-left{
+        margin-left: 10%;
+    }
+    .header-right
+    {
+       margin-top:10px ;
+       
+    }
+
+
+</style>
+<body>
+    <header>
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+            <h1>ADMIN NAME</h1><br>
+            <h3>Welcome Back!</h3><br>
+        </div>
+          
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li>Dashboard</li>
+                <li>My Courses</li>
+                <li>Practice Tests</li>
+                <li>Online Sales</li>
+                <li>PPV Monetisation</li>
+                <li>Coupon Earnings</li>
+                <li>Payments</li>
+                <li>Analytics</li>
+                <li><a href="upload.html">Uploads</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h2>YAYPRO REFERRAL PROGRAM - Refer & Earn</h2>
+            <p>YAYPRO Referral Program is a support program for our educators to earn from each sales irrespective of course ownership. Each educator will get a unique coupon code as a part of Yaypro Referral Program. If coupon code is used for any purchase, student will get 10% discount and educator will receive equal amount as referral.</p>
+            <p>My Coupon Code:</p>
+            <p>Coupon code not issued yet, please check with Yayskool team or send an email at mail@yayskool.com</p>
+            <div class="announcement">
+                <h3>Announcement: New video submission process!</h3>
+                <p>Dear Educator - Please use Uploads option in left menu to submit new videos with link for upload instead of using Whatsapp. This feature will enable each one of us to organise/simplify the process and we need your co-operation in this regard! Please reach out to Yayskool team or send an email to mail@yayskool.com if you have any question or concern.</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="value">1</span>
+                    <span class="label">Total Courses</span>
+                </div>
+                <div class="stat">
+                    <span class="value">30</span>
+                    <span class="label">No. of Videos</span>
+                </div>
+                <div class="stat">
+                    <span class="value">162</span>
+                    <span class="label">Course Visit</span>
+                </div>
+                <div class="stat">
+                    <span class="value">10</span>
+                    <span class="label">Video Views</span>
+                </div>
+                <div class="stat">
+                    <span class="value">5000 INR</span>
+                    <span class="label">Total Earning</span>
+                </div>
+                <div class="stat">
+                    <span class="value">5000 INR</span>
+                    <span class="label">Payment issued</span>
+                </div>
+                <div class="stat">
+                    <span class="value">0 INR</span>
+                    <span class="label">Earning Sales</span>
+                </div>
+                <div class="stat">
+                    <span class="value">0 INR</span>
+                    <span class="label">Earning PPV</span>
+                </div>
+            </div>
+            <div class="links">
+                <a href="#" class="recent-orders">Recent Orders View All</a>
+                <a href="#" class="recent-payments">Recent Payments View All</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

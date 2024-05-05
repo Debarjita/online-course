@@ -1,0 +1,279 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 10px 0; /* Add some padding for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  height:60px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Position the header absolutely inside the container */
+  top: 60px;
+  left: 40px;
+  right: 40px;
+  z-index: 1; /* Ensure the header appears on top */
+  color: #000000; /* Set text color to white for better contrast */
+}
+
+.logo {
+  font-size: 3rem; 
+  font-weight: bold; /* Make the logo text bold */
+  color: #333; 
+  text-decoration: none; /* Remove underline from the link */
+  float: left;
+  font-family:sans-serif;
+  margin-left: 40px;
+  margin-bottom: 80px;
+  
+}
+
+.nav {
+  display: flex; /* Use flexbox for horizontal navigation */
+  justify-content: flex-end; /* Align navigation links to the right */
+  align-items: center; /* Vertically center the navigation links */
+  margin-right: 30px;
+}
+
+.nav li {
+  margin-left: 30px; /* Add some spacing between navigation links */
+}
+
+.nav a {
+  color: #333; /* Set the link color */
+  text-decoration: none; /* Remove underline from the links */
+  transition: color 0.3s; /* Add a smooth transition effect on hover */
+}
+
+.nav a:hover {
+  color: #007bff; /* Change the link color on hover */
+}
+
+
+
+.top {
+  position: relative;
+  height: 100vh; /* Set the height of the section to 100% of the viewport height */
+  overflow: hidden; /* Hide any content that exceeds the section height */
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;}
+
+.container1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.container1 h1 {
+  color: #000000; /* Set the text color to white for better visibility */
+  font-size: 5rem; /* Adjust the font size as needed */
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 6); /* Add a text shadow for better visibility */
+}
+.course-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.course-box {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.course-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 10px;
+}
+
+.course-info h3 {
+  margin-top: 0;
+}
+
+.course-info p {
+  margin-bottom: 10px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+
+
+.author-info span {
+  margin-right: 10px;
+}
+
+.price {
+  margin-left: auto;
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.popular-courses-line {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+}
+.container2 {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.offer {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer h2 {
+  margin-top: 0;
+}
+
+.offer button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.search {
+  background-color: #f5f5f5;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search h2 {
+  margin-top: 0;
+}
+
+.search form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search input,
+.search select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.search button {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover > ul {
+  display: block;
+}
+
+.dropdown ul li {
+  margin: 0;
+}
+
+.dropdown ul li a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown ul li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-menu-right {
+  left: 100px;
+}
